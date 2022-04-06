@@ -1,0 +1,8 @@
+
+POST   http://127.0.0.1:5000/weather
+Content-Type: application/json
+
+{
+    "lat":0.34,
+    "lon":32.58
+}
