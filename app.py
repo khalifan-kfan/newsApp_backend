@@ -1,3 +1,8 @@
+# Muwonge khalifan 1900700558
+#kabugo daniel 1900716476
+#
+#
+#
 import os
 from urllib import response
 from flask import Flask, request
@@ -42,7 +47,7 @@ def global_route():
 def testpost():
      input_json = request.get_json(force=True) 
      link ="https://api.openweathermap.org/data/2.5/onecall?lat="+str(input_json['lat'])+"&lon="+str(input_json['lon'])+"&appid="+WEATHER_KEY
-    # dictToReturn = {'text':input_json['text']}
+ 
      response = urllib.request.urlopen(link)
      if not response.status == 200:
         return dict(status='failed', message='Api is down'), 501
