@@ -1,6 +1,7 @@
 #kabugo daniel 1900716476
 #khalifan muwonge 1900700558
 #Nuwagaba Raymond - 1900717708
+#Kiberu Nuhu 1900700119
 
 
 
@@ -13,6 +14,7 @@ from flask_cors import CORS, cross_origin
 
 
 app = Flask(__name__)
+# for cross origin access
 CORS(app)
 NEWS_KEY = os.getenv("NEWS_API_KEY")
 WEATHER_KEY = os.getenv("WEATHER_API_KEY")
